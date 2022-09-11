@@ -29,13 +29,10 @@ import os
 
 
 st.set_page_config(layout="wide")
-uploaded_file  = st.sidebar.file_uploader("Upload your CSV file:",type = ['csv'])
-if uploaded_file is not None:
-
-     # Can be used wherever a "file-like" object is accepted:
-     df = pd.read_csv(uploaded_file)
-#df=pd.read_csv(r"C:/Users\Makram\Desktop\cleaned_data_31_08_22.csv")
-#df2=pd.read_csv("C:/Users/Makram/Downloads/cleaned_data_desc_title.csv")
+filename  = st.sidebar.file_uploader("Upload your CSV file:",type = ['csv'])
+@st.cache(hash_funcs={StringIO: StringIO.getvalue},allow_output_mutation=True)
+def try_read_df(file_uploaded):
+    return (pd.read_csv(file_uploaded,encoding='unicode_escape'))
 if filename :
      
      data12 = df
