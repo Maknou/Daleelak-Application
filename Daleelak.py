@@ -237,45 +237,45 @@ if filename :
 
          cc = st.columns(5)
          with cc[0]:
-             hc.info_card(title='Distinct Professions',title_text_size="2.6 rem", content=jobs_value, theme_override=theme_1)
+             hc.info_card(title='Distinct Professions',title_text_size="2.7 rem", content=jobs_value, theme_override=theme_1)
 
          with cc[1]:
-             hc.info_card(title='Job Vacancies',title_text_size="2.8rem", content=num_of_titles, theme_override=theme_2)
+             hc.info_card(title='Job Vacancies',title_text_size="2.7 rem", content=num_of_titles, theme_override=theme_2)
 
          with cc[2]:
-             hc.info_card(title='Civil Society Organizations',title_text_size="2.5 rem", content=companies_value, theme_override=theme_3)
+             hc.info_card(title='Civil Society Organizations',title_text_size="2.7 rem", content=companies_value, theme_override=theme_3)
 
          with cc[3]:
-             hc.info_card(title='Types of Majors', content=majors_value, theme_override=theme_4)
+             hc.info_card(title='Types of Majors',title_text_size="2.7 rem", content=majors_value, theme_override=theme_4)
 
          with cc[4]:
-             hc.info_card(title='Intervention Sectors', content=sectors_value, theme_override=theme_5)
+             hc.info_card(title='Intervention Sectors', title_text_size="2.7 rem",content=sectors_value, theme_override=theme_5)
 
          cc1 = st.columns(3)
          with cc1[0]:
-             hc.info_card(title='Most Wanted Jobs', content=item, theme_override=theme_6)
+             hc.info_card(title='Most Wanted Jobs', title_text_size="2.7 rem",content=item, theme_override=theme_6)
 
          with cc1[1]:
-             hc.info_card(title='Top Hiring Organizations', content=item2, theme_override=theme_7)
+             hc.info_card(title='Top Hiring Organizations', title_text_size="2.7 rem",content=item2, theme_override=theme_7)
 
          with cc1[2]:
-             hc.info_card(title='Top Majors Requested', content=item3, theme_override=theme_8)
+             hc.info_card(title='Top Majors Requested',title_text_size="2.7 rem", content=item3, theme_override=theme_8)
 
          cc2 = st.columns(5)
          with cc2[0]:
-             hc.info_card(title='Full Time Contract Offer', content=f'{per_top_cont}%', theme_override=theme_9)
+             hc.info_card(title='Full Time Contract Offer', title_text_size="2.7 rem",content=f'{per_top_cont}%', theme_override=theme_9)
 
          with cc2[1]:
-             hc.info_card(title='Experience of 2-5 years', content=f'{per_top_exp}%', theme_override=theme_10)
+             hc.info_card(title='Experience of 2-5 years', title_text_size="2.7 rem",content=f'{per_top_exp}%', theme_override=theme_10)
 
          with cc2[2]:
-             hc.info_card(title='Salary Range $1200-$2500', content=f'{per_top_sal}%', theme_override=theme_11)
+             hc.info_card(title='Salary Range $1200-$2500', title_text_size="2.7 rem",content=f'{per_top_sal}%', theme_override=theme_11)
 
          with cc2[3]:
-             hc.info_card(title='Intermediate or experienced', content=f'{per_top_lev}%', theme_override=theme_12)
+             hc.info_card(title='Intermediate or experienced', title_text_size="2.7 rem",content=f'{per_top_lev}%', theme_override=theme_12)
 
          with cc2[4]:
-             hc.info_card(title='Bachelor Degree Requirement', content=f'{per_top_bac}%', theme_override=theme_13)
+             hc.info_card(title='Bachelor Degree Requirement', title_text_size="2.7 rem",content=f'{per_top_bac}%', theme_override=theme_13)
 
      elif menu_id == "General Insights":
 
