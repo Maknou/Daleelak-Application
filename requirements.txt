@@ -3,3 +3,8 @@ pandas
 streamlit
 plotly
 sklearn
+streamlit_option_menu
+nbformat
+fontawesome
+collections
+wordcloud
