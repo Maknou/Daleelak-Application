@@ -237,13 +237,13 @@ if filename :
 
          cc = st.columns(5)
          with cc[0]:
-             hc.info_card(title='Distinct Professions',title_text_size="2.4 rem", content=jobs_value, theme_override=theme_1)
+             hc.info_card(title='Distinct Professions',title_text_size="3 rem", content=jobs_value, theme_override=theme_1)
 
          with cc[1]:
-             hc.info_card(title='Job Vacancies',title_text_size="2.3 rem", content=num_of_titles, theme_override=theme_2)
+             hc.info_card(title='Job Vacancies',title_text_size="2.8rem", content=num_of_titles, theme_override=theme_2)
 
          with cc[2]:
-             hc.info_card(title='Civil Society Organization',title_text_size="2.35 rem", content=companies_value, theme_override=theme_3)
+             hc.info_card(title='Civil Society Organizations',title_text_size="4rem", content=companies_value, theme_override=theme_3)
 
          with cc[3]:
              hc.info_card(title='Types of Majors', content=majors_value, theme_override=theme_4)
