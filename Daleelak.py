@@ -217,7 +217,7 @@ if filename :
          st.write(' ')
          st.write(' ')
 
-         theme_1 = {'bgcolor': '#a19f9d','title_color': '#f5f2f0','font_size': 20, 'content_color': '#f5f2f0', 'icon_color':'black','icon': 'fa fa-briefcase'} # jobs titles
+         theme_1 = {'bgcolor': '#a19f9d','title_color': '#f5f2f0','content_color': '#f5f2f0', 'icon_color':'black','icon': 'fa fa-briefcase'} # jobs titles
          theme_2 = {'bgcolor': '#a19f9d','title_color': '#f5f2f0','content_color': '#f5f2f0', 'icon_color':'black','icon': 'fa fa-hashtag'} # job numbers
          theme_3 = {'bgcolor': '#a19f9d','title_color': '#f5f2f0','content_color': '#f5f2f0', 'icon_color':'black','icon': 'fa fa-registered'} # companies
          theme_4 = {'bgcolor': '#a19f9d','title_color': '#f5f2f0','content_color': '#f5f2f0', 'icon_color':'black','icon': 'fa fa-graduation-cap'} # majors
@@ -243,7 +243,7 @@ if filename :
              hc.info_card(title='Job Vacancies', content=num_of_titles, theme_override=theme_2)
 
          with cc[2]:
-             hc.info_card(title='Civil Society Organizations', content=companies_value, theme_override=theme_3)
+             hc.info_card(title='Civil Society Organization', content=companies_value, theme_override=theme_3)
 
          with cc[3]:
              hc.info_card(title='Types of Majors', content=majors_value, theme_override=theme_4)
@@ -275,7 +275,7 @@ if filename :
              hc.info_card(title='Intermediate or experienced', content=f'{per_top_lev}%', theme_override=theme_12)
 
          with cc2[4]:
-             hc.info_card(title='Bachelor Degree', content=f'{per_top_bac}%', theme_override=theme_13)
+             hc.info_card(title='Bachelor Degree Requirement', content=f'{per_top_bac}%', theme_override=theme_13)
 
      elif menu_id == "General Insights":
 
