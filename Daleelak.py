@@ -343,7 +343,7 @@ if filename :
 
              #top_intervention=pd.read_csv("C:/Users/Makram/Downloads/intervention_final.csv")
              top_intervention=data12['Intervention_Sector'].value_counts().reset_index(name='counts')
-             top_intervention_1=top_intervention.sort_values(by=["freq"],ascending=False).head(15)
+             top_intervention_1=top_intervention.sort_values(by=["counts"],ascending=False).head(15)
              fig511=px.bar(top_intervention_1, y="words", x="freq",text='freq', title="Job Postings in relation to Intervention Sector",color_discrete_sequence=['#074650'],height=500,width=1000,orientation='h')
              fig511.update_yaxes(showgrid=False,tickfont=dict(size=18, color='rgb(0,0,0)', family="sans-serif"))
              fig511.update_xaxes(showgrid=False)
