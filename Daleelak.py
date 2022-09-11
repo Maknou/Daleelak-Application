@@ -34,8 +34,8 @@ filename  = st.sidebar.file_uploader("Upload your CSV file:",type = ['csv'])
 def try_read_df(file_uploaded):
     return (pd.read_csv(file_uploaded,encoding='unicode_escape'))
 if filename :
-     
-     data12 = df
+     data = try_read_df(filename )
+     data12 = data
 
      @st.cache
 
