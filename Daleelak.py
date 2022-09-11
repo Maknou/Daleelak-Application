@@ -33,7 +33,6 @@ if uploaded_file is not None:
 
      # Can be used wherever a "file-like" object is accepted:
      df = pd.read_csv(uploaded_file)
-     st.write(dataframe)
 #df=pd.read_csv(r"C:/Users\Makram\Desktop\cleaned_data_31_08_22.csv")
 #df2=pd.read_csv("C:/Users/Makram/Downloads/cleaned_data_desc_title.csv")
 
