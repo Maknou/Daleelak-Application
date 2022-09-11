@@ -28,7 +28,7 @@ import fontawesome as fa
 
 
 st.set_page_config(layout="wide")
-uploaded_file = st.file_uploader("Choose a file")
+uploaded_file  = st.sidebar.file_uploader("Upload your CSV file:",type = ['csv'])
 if uploaded_file is not None:
 
      # Can be used wherever a "file-like" object is accepted:
