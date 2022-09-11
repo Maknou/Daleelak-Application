@@ -29,7 +29,7 @@ import fontawesome as fa
 
 st.set_page_config(layout="wide")
 
-df=pd.read_csv("C:/Users/Makram/Desktop/cleaned_data_31_08_22.csv")
+df=pd.read_csv(r"C:/Users/Makram/Desktop/cleaned_data_31_08_22.csv")
 #df2=pd.read_csv("C:/Users/Makram/Downloads/cleaned_data_desc_title.csv")
 
 data12 = df
