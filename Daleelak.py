@@ -37,7 +37,7 @@ def get_data(filename):
     data.rename(lowercase, axis='columns', inplace=True)
     return data
 
-data = get_data("C:/Users/Makram/Downloads/cleaned_data_31_08_22.csv")
+data = get_data(r"C:\Users\Makram\Downloads\cleaned_data_31_08_22.csv")
 data12 = data
 
 
