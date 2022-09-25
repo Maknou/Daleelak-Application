@@ -37,7 +37,7 @@ def get_data(filename):
     data.rename(lowercase, axis='columns', inplace=True)
     return data
 
-data = get_data("c:\Users\Makram\Downloads\VSCode-win32-x64-1.71.0\cleaned_data_31_08_22.csv")
+data = get_data("https://github.com/Maknou/Daleelak-Application/blob/b9996500cd11d928f739888f9bea6d605e5b771b/cleaned_data_31_08_22.csv")
 data12 = data
 
 
