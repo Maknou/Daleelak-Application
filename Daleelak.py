@@ -30,12 +30,12 @@ import os
 
 st.set_page_config(layout="wide")
 
-path = os.path.dirname(__file__)
-my_file = 'C:/Users/Makram/Downloads/cleaned_data_31_08_22.csv'
+#path = os.path.dirname(__file__)
+#my_file = 'C:/Users/Makram/Downloads/cleaned_data_31_08_22.csv'
+f = open("/Users/Makram/Downloads/VSCode-win32-x64-1.71.0/cleaned_data_31_08_22.csv")
 
-data=my_file
+with open('cleaned_data_31_08_22.csv','r') as f:
+    reader = pd.read_csv(f)
     
-data12 = data
-
-st.write(data12)
+st.write(reader)
 
