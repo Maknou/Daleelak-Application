@@ -63,7 +63,7 @@ st.markdown(
     )
 
 ## Interventions Sectors
-df_inter_1 = data12.loc[data12['Intervention_Sector'].notnull()]
+df_inter_1 = data12['Intervention_Sector']
 list_of_names = df_inter_1['Intervention_Sector'].to_list()
 list_of_names= ",".join(list_of_names)
 my_list = list_of_names.split(",")
