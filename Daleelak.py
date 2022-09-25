@@ -31,11 +31,12 @@ import os
 st.set_page_config(layout="wide")
 
 
-def load_data(filename):
+def get_data(filename):
     data = pd.read_csv(filename)
     lowercase = lambda x: str(x).lower()
     data.rename(lowercase, axis='columns', inplace=True)
     return data
+
 data = get_data("C:/Users/Makram/Downloads/cleaned_data_31_08_22.csv")
 data12 = data
 
