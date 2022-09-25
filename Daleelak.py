@@ -63,7 +63,7 @@ st.markdown(
     )
 
 ## Interventions Sectors
-df_inter_1 = data12[data12['Intervention_Sector']!="N/A"]
+df_inter_1 = data12[data12['Intervention_Sector'].notna()]
 list_of_names = df_inter_1['Intervention_Sector'].to_list()
 list_of_names= ",".join(list_of_names)
 my_list = list_of_names.split(",")
@@ -77,7 +77,7 @@ values = list(word_freq_lem.values())
 df_inter_1 = pd.DataFrame({'words':keys,'freq':values})
 
 ## Majors
-df_edu_1 = data12[data12['Degree_Major']!="N/A"]
+df_edu_1 = data12[data12['Degree_Major'].notna()]
 list_of_names = df_edu_1['Degree_Major'].to_list()
 list_of_names= ",".join(list_of_names)
 my_list = list_of_names.split(",")
@@ -654,7 +654,7 @@ elif menu_id == "Daleelak":
     data_14=data12.loc[data12['Job_Title_Updated_New']==job_title].reset_index(drop=True)
 
     ## Interventions Sectors
-    df_inter = data_14[data_14['Intervention_Sector']!="N/A"]
+    df_inter = data_14[data_14['Intervention_Sector'].notna()]
     list_of_names = df_inter['Intervention_Sector'].to_list()
     list_of_names= ",".join(list_of_names)
     my_list = list_of_names.split(",")
