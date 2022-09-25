@@ -31,13 +31,13 @@ import os
 st.set_page_config(layout="wide")
 
 
-def get_data(filename):
-    data = pd.read_csv(filename)
-    lowercase = lambda x: str(x).lower()
-    data.rename(lowercase, axis='columns', inplace=True)
-    return data
+cwd = os.getcwd()  # Get the current working directory (cwd)
+files = os.listdir(cwd)  # Get all the files in that directory
+f = open("/Users/Makram/Downloads/VSCode-win32-x64-1.71.0/cleaned_data_31_08_22.csv")
 
-data = pd.read_csv("https://github.com/Maknou/Daleelak-Application/blob/b9996500cd11d928f739888f9bea6d605e5b771b/cleaned_data_31_08_22.csv")
+with open('cleaned_data_31_08_22.csv','r') as f:
+    data = pd.read_csv(f)
+    
 data12 = data
 
 
