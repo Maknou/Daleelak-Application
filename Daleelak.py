@@ -33,7 +33,7 @@ st.set_page_config(layout="wide")
 
 cwd = os.getcwd()  # Get the current working directory (cwd)
 files = os.listdir(cwd)  # Get all the files in that directory
-f = open("\Users\Makram\Downloads\VSCode-win32-x64-1.71.0\cleaned_data_31_08_22.csv")
+f = open(r"\Users\Makram\Downloads\VSCode-win32-x64-1.71.0\cleaned_data_31_08_22.csv")
 
 with open('cleaned_data_31_08_22.csv','r') as f:
     data = pd.read_csv(f)
